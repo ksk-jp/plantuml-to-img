@@ -15,6 +15,11 @@ jobs:
         run: npm ci
       - name: generate png from pu
         run: npm run generate-png
+      - name: Count changes
+        id: changes
+        run: |
+          git add -N . # 新規ファイルを含める
+          echo "::set-output name=count::$(git diff --name-only | wc -l)"
       - name: commit & push
         run: |
           git config user.name github-actions
