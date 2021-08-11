@@ -1,0 +1,23 @@
+{
+  "name": "plantuml-to-img",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "generate-png": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ksk-jp/plantuml-to-img.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ksk-jp/plantuml-to-img/issues"
+  },
+  "homepage": "https://github.com/ksk-jp/plantuml-to-img#readme",
+  "dependencies": {
+    "node-plantuml": "^0.9.0"
+  }
+}
