@@ -22,10 +22,7 @@ function main() {
     fileNames.forEach((fileName) => {
       if (fileName.endsWith(".pu")) {
         const fileWithoutExt = trimExt(fileName);
-        //すでにpngが存在する場合、png作成処理スキップ
-        if (!fs.existsSync(fileWithoutExt + ".png")) {
-          generatePngFromPu(fileWithoutExt);
-        }
+        generatePngFromPu(fileWithoutExt);
       }
     });
   });
