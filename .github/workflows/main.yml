@@ -6,7 +6,7 @@ jobs:
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
-        os: [ubuntu-latest, windows-latest, macos-latest]
+        os: [ubuntu-latest]
     steps:
       - uses: actions/checkout@v1
       - name: Setup Graphviz
@@ -15,3 +15,11 @@ jobs:
         run: npm ci
       - name: generate png from pu
         run: npm run generate-png
+      - name: commit & push
+        run: |
+          git config user.name github-actions
+          git config user.email github-actions@github.com
+          git add .
+          git commit -m "Update"
+          git push
+        if: steps.changes.outputs.count > 0
