@@ -1,5 +1,5 @@
 @startuml
-title シーケンス図
-アリス -> ボブ: リクエスト
-ボブ --> アリス: レスポンス
+title sample
+hoge -> fuga: リクエスト
+hoge --> fuga: レスポンス
 @enduml
