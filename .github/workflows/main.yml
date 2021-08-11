@@ -25,10 +25,8 @@ jobs:
           USERNAME: ${{secrets.USERNAME}}
           USERMAIL: ${{secrets.USERMAIL}}
         run: |
-          echo ${USERNAME}
           git config --local user.name ${USERNAME}
           git config --local user.email ${USERMAIL}
-          git checkout -b main
           git add .
           git commit -m "Update"
           git pull origin main
