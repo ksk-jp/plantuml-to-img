@@ -10,7 +10,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: font get
-        run: sudo apt-get install fonts-takao-mincho fonts-takao
+        run: sudo apt install -y fonts-ipafont
       - name: Setup Graphviz
         uses: ts-graphviz/setup-graphviz@v1
       - name: npm ci
