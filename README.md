@@ -1,8 +1,7 @@
 # できること
 
-github actions と連動して、
-Plantuml ファイル（拡張子 .pu）から画像ファイル（拡張子 .png）を生成し、
-コミット、プッシュします。
+github actions と連動してリポジトリへの PUSH をトリガに
+Plantuml ファイル（拡張子 .pu）から画像ファイル（拡張子 .png）を生成しプッシュします。
 
 依存パッケージ
 [glob](https://www.npmjs.com/package/glob): ファイル走査のため
