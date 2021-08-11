@@ -1,0 +1,5 @@
+@startuml
+title sample2
+hoge2 <-- fuga2
+hoge2 --> fuga2
+@enduml

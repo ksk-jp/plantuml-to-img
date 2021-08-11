@@ -30,7 +30,7 @@ jobs:
           git config --local user.name ${USERNAME}
           git config --local user.email ${USERMAIL}
           git add .
-          git commit -m "Update"
+          git commit -m "Update by Github Actions"
           git pull origin main
           git push origin main
         if: steps.changes.outputs.count > 0
