@@ -18,6 +18,10 @@ Plantuml ファイル（拡張子 .pu）から画像ファイル（拡張子 .pn
 - package-lock.json
 - .gitignore
 
+github のsecretに以下を追加
+USERNAME : ユーザ名
+USERMAIL : メ-ルアドレス
+
 # ローカルで動作確認する方法
 
 1. 適当な.pu ファイルを作成
