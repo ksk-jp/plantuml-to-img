@@ -23,7 +23,12 @@ jobs:
           git add -N . # 新規ファイルを含める
           echo "::set-output name=count::$(git diff --name-only | wc -l)"
       - name: commit & push
+        env:
+          USERNAME: ${{secrets.USERNAME}}
+          USERMAIL: ${{secrets.USERMAIL}}
         run: |
+          git config --local user.name ${USERNAME}
+          git config --local user.email ${USERMAIL}
           git add .
           git commit -m "Update"
           git pull origin main
