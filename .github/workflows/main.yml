@@ -6,9 +6,11 @@ jobs:
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
-        os: [windows-latest]
+        os: [ubuntu-latest]
     steps:
       - uses: actions/checkout@v2
+      - name: font get
+        run: sudo apt-get install fonts-takao-mincho fonts-takao
       - name: Setup Graphviz
         uses: ts-graphviz/setup-graphviz@v1
       - name: npm ci
