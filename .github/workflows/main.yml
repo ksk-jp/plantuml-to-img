@@ -26,10 +26,11 @@ jobs:
           USERMAIL: ${{secrets.USERMAIL}}
         run: |
           echo ${USERNAME}
-          git config user.name ${USERNAME}
-          git config user.email ${USERMAIL}
+          git config --local user.name ${USERNAME}
+          git config --local user.email ${USERMAIL}
           git checkout -b main
           git add .
           git commit -m "Update"
+          git pull origin main
           git push origin main
         if: steps.changes.outputs.count > 0
