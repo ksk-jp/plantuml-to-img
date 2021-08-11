@@ -1,5 +1,5 @@
 @startuml
 title sample
-hoge -> fuga: リクエスト
-hoge --> fuga: レスポンス
+hoge <-- fuga
+hoge --> fuga
 @enduml
