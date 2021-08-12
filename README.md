@@ -1,16 +1,21 @@
-# できること
+# What can I do
 
-github actions と連動してリポジトリへの PUSH をトリガに
-Plantuml ファイル（拡張子 .pu）から画像ファイル（拡張子 .png）を生成し PUSH します。
+When you push github repository , Image files(_.png) are generated from PlantUml files(_.pu) by GithubActions
 
-# 依存パッケージ
+# Requirement
 
+When using github actions , there is no requirement.(Only you need is pushing your PlantUml files.)
+If you want to demonstrate on your local machine, you need to install [Graphviz](https://graphviz.org/)
+
+# Dependencies
+
+- [Graphviz](https://graphviz.org/)
 - [glob](https://www.npmjs.com/package/glob): ファイル走査のため
 - [node-plantuml](https://www.npmjs.com/package/node-plantuml): 画像ファイル作成のため
 
-# PJ への移植方法
+# Installation
 
-以下をコピーする
+1. Copy following files/folders to your repository
 
 - .github/
 - index.js
@@ -18,12 +23,15 @@ Plantuml ファイル（拡張子 .pu）から画像ファイル（拡張子 .pn
 - package-lock.json
 - .gitignore
 
-github のsecretに以下を追加
-USERNAME : ユーザ名
-USERMAIL : メ-ルアドレス
+2. Set following secrets on your github repository
+   - USERNAME : your github username
+   - USERMAIL : your github mailaddress
 
-# ローカルで動作確認する方法
+# Usage
 
-1. 適当な.pu ファイルを作成
-2. npm ci
-3. npm run generate-png
+When using github actions , there is no requirement.(Only you need is pushing your PlantUml files to your github repository.)
+If you want to demonstrate on your local machine, you need:
+
+1. npm ci
+1. Create PlantUml file
+1. npm run generate-png
