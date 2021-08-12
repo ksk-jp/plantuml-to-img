@@ -6,7 +6,7 @@ When you push to github repository, Image files(_.png) are generated from PlantU
 
 # Requirement
 
-When using github actions, there is no requirement.(Only you need is pushing your PlantUml files.)
+Only you need is pushing your PlantUml files.(No requirements)
 If you want to demonstrate on your local machine, you need to install [Graphviz](https://graphviz.org/).
 
 # Dependencies
