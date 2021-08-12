@@ -1,5 +1,7 @@
 name: Graphviz CI
-on: [push]
+on:
+  push:
+    branches: [main]
 jobs:
   test:
     name: Test on node ${{ matrix.node-version }} and ${{ matrix.os }}
@@ -12,7 +14,7 @@ jobs:
       - name: font get
         run: sudo apt install -y fonts-ipafont
       - name: Setup Graphviz
-        uses: ts-graphviz/setup-graphviz@v1
+        run: apt-get install graphviz
       - name: npm ci
         run: npm ci
       - name: generate png from pu
