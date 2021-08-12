@@ -1,6 +1,6 @@
 # What can I do
 
-When you push github repository, Image files(_.png) are generated from PlantUml files(_.pu) by GithubActions.
+When you push to github repository, Image files(_.png) are generated from PlantUml files(_.pu) by GithubActions.
 
 ![sample](./sample/sample.png)
 
