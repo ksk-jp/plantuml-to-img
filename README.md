@@ -10,8 +10,8 @@ If you want to demonstrate on your local machine, you need to install [Graphviz]
 # Dependencies
 
 - [Graphviz](https://graphviz.org/)
-- [glob](https://www.npmjs.com/package/glob): ファイル走査のため
-- [node-plantuml](https://www.npmjs.com/package/node-plantuml): 画像ファイル作成のため
+- [glob](https://www.npmjs.com/package/glob)
+- [node-plantuml](https://www.npmjs.com/package/node-plantuml)
 
 # Installation
 
@@ -29,7 +29,7 @@ If you want to demonstrate on your local machine, you need to install [Graphviz]
 
 # Usage
 
-When using github actions , there is no requirement.(Only you need is pushing your PlantUml files to your github repository.)
+When using github actions , only you usage is pushing your PlantUml files to your github repository.
 If you want to demonstrate on your local machine, you need:
 
 1. npm ci
