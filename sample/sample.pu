@@ -1,5 +1,13 @@
 @startuml
-title sample
-hoge <-- fuga
-hoge --> fuga
+actor you as y
+database "local repository" as lr
+database "github repository" as gr
+control "github actions" as ga
+
+y -> lr:commit PlantUml files
+lr -> gr :push
+gr --> ga : trigger
+ga -> gr : generate Image files
+
+
 @enduml

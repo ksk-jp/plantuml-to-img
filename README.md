@@ -1,10 +1,12 @@
 # What can I do
 
-When you push github repository , Image files(_.png) are generated from PlantUml files(_.pu) by GithubActions
+When you push github repository, Image files(_.png) are generated from PlantUml files(_.pu) by GithubActions.
+
+![sample](./sample/sample.png)
 
 # Requirement
 
-When using github actions , there is no requirement.(Only you need is pushing your PlantUml files.)
+When using github actions, there is no requirement.(Only you need is pushing your PlantUml files.)
 If you want to demonstrate on your local machine, you need to install [Graphviz](https://graphviz.org/)
 
 # Dependencies
@@ -29,7 +31,7 @@ If you want to demonstrate on your local machine, you need to install [Graphviz]
 
 # Usage
 
-When using github actions , only you usage is pushing your PlantUml files to your github repository.
+When using github actions, only you usage is pushing your PlantUml files to your github repository.
 If you want to demonstrate on your local machine, you need:
 
 1. npm ci
